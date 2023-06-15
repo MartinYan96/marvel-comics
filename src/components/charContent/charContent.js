@@ -1,7 +1,6 @@
 import './charContent.scss'
 import useMarvelService from '../../services/MarvelService';
 import { useEffect, useState } from 'react';
-import ServicesError from '../../services/ServicesError'
 import CharSearch from './CharSearch';
 import LoadingSpinner from '../loadingSpinner/LoadingSpinner'
 
@@ -11,7 +10,7 @@ const Nocomics = () => {
 
 
 const CharContent = () => {
-    const { loader, error, request, getAllPerson, totalNumber } = useMarvelService()
+    const { loader,getAllPerson, totalNumber } = useMarvelService()
 
     const [list, setList] = useState([])
     const [personInfo, setPersonInfo] = useState({})

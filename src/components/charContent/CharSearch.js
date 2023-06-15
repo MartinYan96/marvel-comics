@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { Link } from 'react-router-dom';
 import * as Yup from 'yup'
-import { useEffect, useState } from "react"
+import {useState } from "react"
 import useMarvelService from "../../services/MarvelService"
 import './charSearch.scss'
 
@@ -9,7 +9,7 @@ import './charSearch.scss'
 const CharSearch = () => {
     const [char, setChar] = useState(null);
 
-    const { getSearch, loader, error, clearError, selectPerson } = useMarvelService()
+    const { getSearch, loader, clearError} = useMarvelService()
 
 
     const onCharLoaded = (char) => {

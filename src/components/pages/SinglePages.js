@@ -10,7 +10,7 @@ import AppBaner from "../appBaner/AppBaner";
 const SinglePages = ({ Component, dataType }) => {
     const { id } = useParams();
     const [data, setData] = useState(null);
-    const { loader, error, getComics, selectPerson, clearError,getComicById } = useMarvelService();
+    const { loader, error, selectPerson, clearError, getComicById } = useMarvelService();
 
     useEffect(() => {
         updateData()
@@ -27,6 +27,8 @@ const SinglePages = ({ Component, dataType }) => {
             case 'characters':
                 selectPerson(id)
                     .then(onDataLoaded);
+                    break
+            default: return 
         }
     }
     console.log(id)

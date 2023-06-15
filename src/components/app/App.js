@@ -6,10 +6,11 @@ import ServicesError from '../../services/ServicesError'
 import LoadingSpinner from '../loadingSpinner/LoadingSpinner';
 
 
+
 const HomePage = lazy(() => import('../pages/HomePage'))
 const ComicsPage = lazy(() => import('../pages/ComicsPage'))
 const SinglePages = lazy(() => import('../pages/SinglePages'))
-const SingleComicsPage = lazy(() => import('../singleComics/SingleComics'))
+const SingleComicsPage = lazy(() => import('../singleComics/singleComics'))
 const SingleCharPage = lazy(() => import('../singleChar/SingleChar'))
 
 
@@ -20,6 +21,7 @@ function App() {
         <Header />
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
+            <Route path="/marvel-comics" element={<HomePage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/comics" element={<ComicsPage />} />
             <Route path="/comics/:id" element={<SinglePages Component={SingleComicsPage} dataType='comics' />} />
