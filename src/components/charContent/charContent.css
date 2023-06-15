@@ -1,0 +1,93 @@
+.charContent {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 650px 425px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  position: relative;
+}
+.charContent .personListBlock {
+  display: flex;
+  align-items: center;
+  row-gap: 30px;
+  flex-direction: column;
+}
+.charContent .personListBlock .personList {
+  display: flex;
+  row-gap: 30px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.charContent .personListBlock .personList .personItem {
+  background: #232222;
+  width: 200px;
+  height: 318px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+.charContent .personListBlock .personList .personItem img {
+  width: 200px;
+  height: 200px;
+}
+.charContent .personListBlock .personList .personItem .name {
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 20px 0 0 20px;
+}
+.charContent .personListBlock .personList .personItem:hover {
+  box-shadow: 0 5px 20px #9F0013;
+  transform: translateY(-8px);
+}
+.charContent .personListBlock .loadMore {
+  width: 170px;
+}
+.charContent .personInfo {
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  background: #fff;
+  z-index: 6;
+  height: 1082px;
+}
+.charContent .personInfo .imgAndName {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.charContent .personInfo .imgAndName img {
+  width: 150px;
+  height: 150px;
+}
+.charContent .personInfo .imgAndName .personNameAndLink {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.charContent .personInfo .imgAndName .personNameAndLink .personName {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 27.5px;
+}
+.charContent .personInfo .charInfo {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.charContent .personInfo .comicsPerson {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+.charContent .personInfo .comicsPerson .comicsItem {
+  width: 100%;
+  padding: 0px 10px;
+  line-height: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
+}/*# sourceMappingURL=charContent.css.map */

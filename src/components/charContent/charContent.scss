@@ -1,0 +1,118 @@
+@import '../../variablesCss.scss';
+
+.charContent {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 650px 425px;
+    column-gap: 25px;
+    position: relative;
+
+    .personListBlock {
+        display: flex;
+        align-items: center;
+        row-gap: 30px;
+        flex-direction: column;
+
+        .personList {
+            display: flex;
+            row-gap: 30px;
+            column-gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            .personItem {
+                background: $dark;
+                width: 200px;
+                height: 318px;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+                transition: .3s;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                .name {
+                    color: white;
+                    font-size: 22px;
+                    font-weight: bolder;
+                    margin: 20px 0 0 20px;
+                }
+            }
+
+            .personItem:hover {
+                box-shadow: 0 5px 20px $main-color;
+                transform: translateY(-8px);
+            }
+
+        }
+
+        .loadMore {
+            width: 170px;
+
+        }
+    }
+
+    .personInfo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        z-index: 6;
+        height: 1014px;
+
+        .personInfoBlock {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+            padding: 25px;
+            min-height: 750px;
+            margin-bottom: 30px;
+
+            .imgAndName {
+                display: flex;
+                column-gap: 25px;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                .personNameAndLink {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+
+                    .personName {
+                        font-size: 22px;
+                        font-weight: bold;
+                        margin-bottom: 27.5px;
+                    }
+                }
+            }
+
+            .charInfo {
+                margin-top: 15px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .comicsPerson {
+                margin: 10px 0;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 24px;
+
+
+                .comicsItem {
+                    width: 100%;
+                    padding: 0px 10px;
+                    line-height: 25px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

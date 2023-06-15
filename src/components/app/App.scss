@@ -1,0 +1,51 @@
+@import '../../variablesCss.scss';
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Roboto';
+}
+
+.App {
+    width: 1100px;
+    padding: 50px 0;
+    margin: auto;
+    position: relative;
+
+    .visionImg {
+        position: absolute;
+        width: 467px;
+        height: 372px;
+        bottom: 0;
+        right: -95px;
+        z-index: -1;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $main-color;
+    color: white;
+    font-size: 14px;
+    clip-path: polygon(10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%, 0 25%);
+    height: 38px;
+    width: 101px;
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+}
+
+.buttons:hover {
+    transform: translateY(-5px);
+}
+
+.buttons:disabled {
+    filter: grayscale(.5);
+}

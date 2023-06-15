@@ -1,0 +1,85 @@
+@import '../../variablesCss.scss';
+
+.randomCharPerson {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 260px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+
+    .randomPerson {
+        display: flex;
+        padding: 40px 35px;
+        gap: 30px;
+
+        .img {
+            width: 180px;
+            height: 180px;
+            img {
+                width: 180px;
+                height: 180px;
+       
+            }
+        }
+
+        .personInfo {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            position: relative;
+
+            .name {
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            .info {
+                font-size: 14px;
+                overflow: hidden;
+                scroll-behavior: auto;
+            }
+
+            .sellectLink {
+                display: flex;
+                gap: 30px;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+
+                .wiki {
+                    background: $grey;
+                }
+            }
+        }
+    }
+
+    .randomPersonToggle {
+        padding: 40px 35px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+        font-weight: bold;
+        background: $dark;
+
+        .randomPersonTittle {
+            color: white;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.050em;
+        }
+
+        .randomPersonTittle:nth-child(2) {
+            margin-top: 30px;
+        }
+
+        img {
+            position: absolute;
+            width: 203px;
+            height: 189px;
+            object-fit: cover;
+            right: -40px;
+            bottom: 10px;
+        }
+    }
+}

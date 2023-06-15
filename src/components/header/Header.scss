@@ -1,0 +1,28 @@
+@import '../../variablesCss.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 50px;
+
+    a {
+        color: black;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .pages {
+        font-size: 24px;
+        display: flex;
+
+        a:hover {
+            color: $main-color;
+
+        }
+    }
+}

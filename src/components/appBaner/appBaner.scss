@@ -1,0 +1,20 @@
+.comicsHeader {
+    width: 100%;
+    height: 100px;
+    background: #232222;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+    align-items: center;
+    position: relative;
+
+    .comicsTitle {
+        left: 250px;
+        position: absolute;
+        color: white;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: bold;
+        letter-spacing: -0.05em;
+    }
+}
